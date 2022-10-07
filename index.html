@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @media all and (min-width: 200px) and (max-width: 750px){
+            #options{
+                display: flex;
+            }
+#navbar #options{
+display: grid;
+grid-template-columns: repeat(1,1fr);
+}
+        }
+
+        body{
+            margin: 0px 50px;
+        }
+        #navbar{
+            display: flex;
+            justify-content: space-between;
+        }
+        #options{
+            display: flex;
+            gap: 50px;
+            border: 1px;
+            border-radius: 2px;
+        }
+        button{
+            color: red;
+            border: 1px solid red;
+            border-radius: 3px;
+            width: 70px;
+            height: 40px;
+            margin-top: 10px;
+            background-color: white;
+        }
+        button:hover{
+            background-color:rgb(226, 180, 180);
+            cursor: pointer;
+        }
+
+        .dropdown{
+           
+            background-color: pink;
+            border: 1px solid salmon;
+        }
+        #sel{
+            width: 10%;
+            border: none;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div id="navbar">
+        <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="masai-logo">
+        <div id="options">
+           <h4>COURSES
+            <select name="" id="sel">
+                <option value=""></option>
+                <option class="dropdown" value=""> Full Time                 
+                </option>
+                <option value=""><p>Full Stack Web Development</p></option>
+                <option value="">Part Time</option>
+                <option value="">
+                        <p>Full Stack Web Development</p>
+                    
+                    
+                </option>
+                <option value=""><p>Data Analytics</p></option>
+                
+            </select>
+           </h4>
+            <h4>FEES & ISA</h4>
+            <h4>FAQ</h4>
+            <h4>ABOUT US</h4>
+            <h4>EVENTS</h4>
+            <h4>HIRE FROM US</h4>
+        </div>
+        
+        <h4 style="color: #7b7dcc; background-color: #f2fdff;">REFER & EARN</h4>
+            <button>LOGIN</button>
+        </div>
+</body>
+</html>
